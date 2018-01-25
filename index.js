@@ -16,3 +16,10 @@ function deleteFromObjectByKey (object, key){
   
 }
 deleteFromObjectByKey(recipes,"flour");
+
+function destructivelyDeleteFromObjectByKey(object,key){
+    delete object.key;
+    return object;
+}
+
+destructivelyUpdateObjectWithKeyAndValue(recipes,"eggs");
